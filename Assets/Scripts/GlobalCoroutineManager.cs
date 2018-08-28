@@ -11,7 +11,6 @@ namespace Utils
             get
             {
                 if (_instance != null) return _instance;
-                
                 var tmp = new GameObject("GlobalCoroutineManager", typeof(GlobalCoroutineManager));
                 return tmp.GetComponent<GlobalCoroutineManager>();
             }
