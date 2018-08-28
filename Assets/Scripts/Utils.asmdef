@@ -1,0 +1,11 @@
+{
+    "name": "Utils",
+    "references": [
+        "Debuging",
+        "SceneManagement"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}
