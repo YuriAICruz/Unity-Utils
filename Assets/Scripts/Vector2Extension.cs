@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Utils
+namespace Graphene.Utils
 {
     public static class Vector2Extension {
      

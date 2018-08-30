@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-namespace Utils.Editor
+namespace Graphene.Utils.Editor
 {
     public class EnumFlagsAttribute : PropertyAttribute
     {

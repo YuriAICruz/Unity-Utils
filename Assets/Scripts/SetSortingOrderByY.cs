@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Utils
+namespace Graphene.Utils
 {
 	[RequireComponent(typeof(SpriteRenderer))]
 	public class SetSortingOrderByY : MonoBehaviour

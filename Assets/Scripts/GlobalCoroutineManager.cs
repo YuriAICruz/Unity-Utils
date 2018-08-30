@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Utils
+namespace Graphene.Utils
 {
     public class GlobalCoroutineManager : MonoBehaviour
     {
@@ -28,8 +28,12 @@ namespace Utils
                 Destroy(this);
                 return;
             }
+            
+            Debug.LogWarning("Possible inconsistency while using the custom SceneManagement");
+            
+            DontDestroyOnLoad(gameObject);
 
-            SceneManagement.SceneManager.AssignManager(this.gameObject);
+            // SceneManagement.SceneManager.AssignManager(this.gameObject);
         }
     }
 }

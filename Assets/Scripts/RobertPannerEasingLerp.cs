@@ -1,7 +1,6 @@
-﻿using Debuging;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Utils
+namespace Graphene.Utils
 {
     public enum Equations
     {
@@ -182,7 +181,7 @@ namespace Utils
                     return BackEaseOutIn(time, from, to, duration);
                     break;
                 default:
-                    ConsoleDebug.LogError("Equation not supported: " + equation);
+                    Debug.LogError("Equation not supported: " + equation);
                     return 0;
             }
         }

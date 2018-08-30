@@ -4,7 +4,7 @@ using UnityEngine;
 using Component = UnityEngine.Component;
 using Object = UnityEngine.Object;
  
-    namespace Utils
+    namespace Graphene.Utils
     {
         public static class InterfaceHelper
         {

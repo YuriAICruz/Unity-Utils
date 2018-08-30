@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace Utils
+namespace Graphene.Utils
 {
     public static class ListExtensions
     {
