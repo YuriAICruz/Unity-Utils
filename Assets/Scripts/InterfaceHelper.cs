@@ -165,7 +165,6 @@ using Object = UnityEngine.Object;
  
                 foreach ( var curType in types )
                 {
-                    //Optimization - don't get all objects if we need only one
                     Component[] components = firstOnly ?
                         new []{ component.GetComponent( curType ) }
                         : component.GetComponents( curType );
@@ -174,9 +173,12 @@ using Object = UnityEngine.Object;
                         continue;
  
                     var tList = new List<T>();
- 
+                    
                     foreach (var curComp in components)
                     {
+                        if(curComp == null)
+                            continue;
+                        
                         var curCompAsT = curComp as T;
  
                         if ( null == curCompAsT )
