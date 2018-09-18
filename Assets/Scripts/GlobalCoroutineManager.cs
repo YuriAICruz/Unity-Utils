@@ -29,7 +29,7 @@ namespace Graphene.Utils
                 return;
             }
             
-            Debug.LogWarning("Possible inconsistency while using the custom SceneManagement");
+            // Debug.LogWarning("Possible inconsistency while using the custom SceneManagement");
             
             DontDestroyOnLoad(gameObject);
 
