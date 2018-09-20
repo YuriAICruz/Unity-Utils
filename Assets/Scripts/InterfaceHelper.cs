@@ -8,7 +8,7 @@ using Object = UnityEngine.Object;
     {
         public static class InterfaceHelper
         {
-            private static Dictionary<Type, List<Type>> _interfaceToComponentMapping;
+            private static System.Collections.Generic.Dictionary<Type, List<Type>> _interfaceToComponentMapping;
             private static Type[] _allTypes;
  
             static InterfaceHelper()
@@ -18,7 +18,7 @@ using Object = UnityEngine.Object;
  
             private static void InitInterfaceToComponentMapping()
             {
-                _interfaceToComponentMapping = new Dictionary<Type, List<Type>>();
+                _interfaceToComponentMapping = new System.Collections.Generic.Dictionary<Type, List<Type>>();
  
                 _allTypes = GetAllTypes();
  
