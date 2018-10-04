@@ -1,7 +1,7 @@
 {
-    "name": "UtilsEditor",
+    "name": "Graphene.UtilsEditor",
     "references": [
-        "Utils"
+        "Graphene.Utils"
     ],
     "optionalUnityReferences": [],
     "includePlatforms": [
