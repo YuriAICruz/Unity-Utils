@@ -199,7 +199,10 @@ using Object = UnityEngine.Object;
             public static T GetInterfaceComponent<T>( this Component component ) where T : class
             {
                 var list = GetInterfaceComponents<T>( component, true );
- 
+
+                if (list == null || list.Count == 0)
+                    return null;
+                
                 return list[0];
             }
         }
